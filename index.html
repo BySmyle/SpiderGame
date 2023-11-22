@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Idle Game</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+		<header>
+			<div id="playerData">
+				<div id="playerStats">
+					<p>Spider-Force : <span id="argent" >0</span><img src="./SpiderLogo.png"/></p>
+					<p id="innovDisplay" style="display:none;">Innovation : <span id="celeb">0</span></p>
+					<p id="argTot" style="display:none;" >Argent Total : <span id="argentTotal">0</span></p>
+				</div>
+				
+			</div>
+		</header>
+		<section id="tabBureau">
+			<div>
+				<img id="devImg" onclick="dev(event)" src="./spiderf.png"/>
+				<p id="tutoTxt" >Cliquez pour gagner de la force !</p>
+			</div>
+		
+			<table id="resourcesTab" style="1px solid">
+				<tr>
+					<th>Equipement</th>
+					<th>Coût</th>
+					<th>Spider-Force par sec</th>
+					<th>Nombre</th>
+					<th>Acheter <select id="buyAmount">
+						<option selected value="1">x1</option>
+					</select></th>
+				</tr>
+			</table>
+		</section>
+		<script src="game.js"></script></br>
+		<div id="mesBoutons">
+			<button id="prsBtn" onclick="prestige()">Innover</button>
+			<button onclick="reset(true)">Reset</button>
+			<button id="autoBtn" style="background-color:red" onclick="toggleAuto()">Auto</button>
+		</div>
+	</body>
+</html>
