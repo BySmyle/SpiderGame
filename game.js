@@ -146,9 +146,10 @@ function calculateCost(item) {
 }
 
 function acheter(item) {
+	let option = document.getElementById('buyAmount').value;
 	if (item.cost <= player.money) {
 		player.money -= item.cost;
-		item.amount += 1;
+		item.amount + option;
 	}
 
 }
